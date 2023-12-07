@@ -21,6 +21,8 @@ export type Clothes = {
   img: string;
 };
 
+export type AnyClothes = Clothes | EmptyClothes;
+
 export type FetchWeather = {
   city: string;
 };

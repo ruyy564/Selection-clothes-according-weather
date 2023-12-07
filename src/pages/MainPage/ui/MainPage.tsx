@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable no-unused-vars */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Card, Collapse, CollapseProps, Flex, Form, Layout, theme, Typography } from 'antd';
@@ -10,6 +11,7 @@ import { FormQueryWeather } from 'widgets/FormQueryWeather';
 import { parseKelvinToCelsius } from 'shared/libs';
 import { GENDER, PART_BODY } from 'shared/api/constants';
 import style from './style.module.less';
+import { CardClothes } from './CardClothes';
 import { useGetWeather } from '../hooks/useGetWeather';
 import { useGetClothes } from '../hooks/useGetClothes';
 
@@ -31,10 +33,12 @@ export const MainPage = () => {
   } = theme.useToken();
 
   const [form] = Form.useForm<FormType>();
-
   const [activeKey, setActiveKey] = useState(['1']);
+
   const { mutation: weatherMutation, loading: loadingWeather } = useGetWeather();
   const { mutation: clothesMutation, loading: loadingClothes, data } = useGetClothes(form, weatherMutation.data);
+
+  const loading = loadingWeather || loadingClothes;
 
   const onChange = (key: string | string[]) => {
     Array.isArray(key) && setActiveKey(key);
@@ -71,63 +75,28 @@ export const MainPage = () => {
       <Content className={style.content}>
         <Flex vertical align="center" style={{ padding: 24 }} gap={20}>
           <Collapse onChange={onChange} items={items} style={{ width: '600px' }} activeKey={activeKey} />
-          <Flex vertical align="center" style={{ padding: 24 }} gap={20}>
+          <Flex align="flex-start" style={{ padding: 24 }} gap={20}>
             {weatherMutation.data && (
-              <Card title="Погода:" style={{ width: 300 }} loading={loadingWeather} hoverable>
+              <Card
+                title="Погода:"
+                style={{ width: 300 }}
+                headStyle={{ backgroundColor: colorPrimary }}
+                loading={loading}
+                hoverable
+              >
                 <p>Город: {weatherMutation.data.name}</p>
                 <p>Температура: {parseKelvinToCelsius(weatherMutation.data.main.temp)}, C</p>
                 <p>Ощущается как: {parseKelvinToCelsius(weatherMutation.data.main.feels_like)}, C</p>
                 <p>Скорость ветра: {weatherMutation.data.wind.speed} м/с</p>
-                <p>Тип погоды: {weatherMutation.data.weather[0].main}</p>
               </Card>
             )}
-            {data && (
-              <>
-                {data[PART_BODY.HEAD]?.[0] && (
-                  <Card title="Голова:" style={{ width: 300 }} loading={loadingClothes} hoverable>
-                    {data[PART_BODY.HEAD][0].clothes.map((item, index) => {
-                      if (item.type === 'empty') {
-                        return null;
-                      }
-
-                      return <img key={index} src={item.img} width={100} />;
-                    })}
-                  </Card>
-                )}
-                {data[PART_BODY.BODY]?.[0] && (
-                  <Card title="Тело:" style={{ width: 300 }} loading={loadingClothes} hoverable>
-                    {data[PART_BODY.BODY][0].clothes.map((item, index) => {
-                      if (item.type === 'empty') {
-                        return null;
-                      }
-
-                      return <img key={index} src={item.img} width={100} />;
-                    })}
-                  </Card>
-                )}
-                {data[PART_BODY.LEGS]?.[0] && (
-                  <Card title="Ноги:" style={{ width: 300 }} loading={loadingClothes} hoverable>
-                    {data[PART_BODY.LEGS][0].clothes.map((item, index) => {
-                      if (item.type === 'empty') {
-                        return null;
-                      }
-
-                      return <img key={index} src={item.img} width={100} />;
-                    })}
-                  </Card>
-                )}
-                {data[PART_BODY.FOOT]?.[0] && (
-                  <Card title="Ноги:" style={{ width: 300 }} loading={loadingClothes} hoverable>
-                    {data[PART_BODY.FOOT][0].clothes.map((item, index) => {
-                      if (item.type === 'empty') {
-                        return null;
-                      }
-
-                      return <img key={index} src={item.img} width={100} />;
-                    })}
-                  </Card>
-                )}
-              </>
+            {Object.entries(data).length > 0 && (
+              <Card title={'Одежда:'} headStyle={{ backgroundColor: colorPrimary }}>
+                <CardClothes data={data[PART_BODY.HEAD]} title={'Голова:'} loading={loading} />
+                <CardClothes data={data[PART_BODY.BODY]} title={'Тело:'} loading={loading} />
+                <CardClothes data={data[PART_BODY.HEAD]} title={'Ноги:'} loading={loading} />
+                <CardClothes data={data[PART_BODY.HEAD]} title={'Обувь:'} loading={loading} />
+              </Card>
             )}
           </Flex>
         </Flex>

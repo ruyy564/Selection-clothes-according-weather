@@ -1,6 +1,6 @@
 import axios, { AxiosResponse } from 'axios';
 import { Clothes, ClothesStyle, Weather } from './types';
-import { API_KEY, GENDER } from './constants';
+import { API_KEY } from './constants';
 
 // настройки приложения
 const instanceSettingApp = axios.create({
@@ -23,8 +23,8 @@ export const fetchClothesStyle = () => {
   return instanceSettingApp.get<undefined, ClothesStyle>('clothesStyle');
 };
 
-export const fetchClothes = (gender: GENDER) => {
-  return instanceSettingApp.get<undefined, Clothes[]>(`clothes?gender=${gender}`);
+export const fetchClothes = () => {
+  return instanceSettingApp.get<undefined, Clothes[]>(`clothes`);
 };
 
 export const fetchWeather = (city: string) => {

@@ -14,14 +14,7 @@ type Props = {
   form: FormInstance<FormType>;
   weatherMutation: UseMutationResult<Weather, Error, FetchWeather, unknown>;
   loadingWeather: boolean;
-  clothesMutation: UseMutationResult<
-    Clothes[],
-    Error,
-    {
-      gender: GENDER;
-    },
-    unknown
-  >;
+  clothesMutation: UseMutationResult<Clothes[], Error, void, unknown>;
   loadingClothes: boolean;
 };
 
@@ -32,7 +25,7 @@ export const FormQueryWeather: FC<Props> = (props) => {
 
   const onFinish = ({ city }: FormType) => {
     weatherMutation.mutate({ city });
-    clothesMutation.mutate({ gender: form.getFieldValue('gender') });
+    clothesMutation.mutate();
   };
 
   const onReset = () => {
@@ -55,8 +48,8 @@ export const FormQueryWeather: FC<Props> = (props) => {
       </Form.Item>
       <Form.Item name="gender" label="Пол" rules={[{ required: true, message: 'Выберете ваш пол!' }]}>
         <Radio.Group>
-          <Radio value={GENDER.MALE}> М</Radio>
-          <Radio value={GENDER.FEMALE}> Ж</Radio>
+          <Radio value={GENDER.MALE}> Мужской</Radio>
+          <Radio value={GENDER.FEMALE}> Женский</Radio>
           <Radio value={GENDER.UNISEX}> Унисекс</Radio>
         </Radio.Group>
       </Form.Item>
