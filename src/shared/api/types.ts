@@ -1,13 +1,34 @@
-import { PRECIPITATION, WEATHER_PERIOD } from './constants';
+import { GENDER, PART_BODY, PRECIPITATION, TYPE } from './constants';
 
 export type ClothesStyle = {
-  key: string;
+  id: string;
   name: string;
 }[];
 
+export type EmptyClothes = {
+  type: 'empty';
+  coefficient: 0;
+};
+
+export type Clothes = {
+  gender: GENDER;
+  name: string;
+  style: string[];
+  age: [number, number];
+  type: TYPE;
+  partOfBody: PART_BODY[];
+  coefficient: number;
+  img: string;
+};
+
 export type FetchWeather = {
   city: string;
-  weatherPeriod: WEATHER_PERIOD;
+};
+
+export type FetchClothes = {
+  gender: GENDER;
+  age: number;
+  styleClothes: string;
 };
 
 export type Weather = {

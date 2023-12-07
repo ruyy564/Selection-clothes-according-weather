@@ -13,8 +13,21 @@ export enum PRECIPITATION {
   Clear = 'Clear',
 }
 
-export enum WEATHER_PERIOD {
-  CURRENT = 'current',
-  HOURLY = 'hourly',
-  DAILY = 'daily',
+export enum GENDER {
+  FEMALE = 'female',
+  MALE = 'male',
+  UNISEX = 'unisex',
+}
+
+export enum TYPE {
+  LOW = 'low',
+  HIGH = 'high',
+  MIDDLE = 'middle',
+}
+
+export enum PART_BODY {
+  BODY = 'body',
+  LEGS = 'legs',
+  FOOT = 'foot',
+  HEAD = 'head',
 }

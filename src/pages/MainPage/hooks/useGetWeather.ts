@@ -7,9 +7,9 @@ export const useGetWeather = () => {
   const [loading, setLoading] = useState(false);
 
   const mutation = useMutation({
-    mutationFn: ({ city, weatherPeriod }: FetchWeather) => {
+    mutationFn: ({ city }: FetchWeather) => {
       setLoading(true);
-      return fetchWeather(city, weatherPeriod);
+      return fetchWeather(city);
     },
     onSuccess: () => {
       setLoading(false);

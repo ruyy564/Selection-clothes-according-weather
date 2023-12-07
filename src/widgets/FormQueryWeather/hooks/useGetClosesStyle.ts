@@ -1,8 +1,8 @@
 import { useQuery } from '@tanstack/react-query';
-import { fetchClosesStyle } from 'shared/api';
+import { fetchClothesStyle } from 'shared/api';
 
 export const useGetClosesStyle = () => {
-  const query = useQuery({ queryKey: ['closesStyle'], queryFn: fetchClosesStyle });
+  const query = useQuery({ queryKey: ['clothesStyle'], queryFn: fetchClothesStyle });
 
   return query;
 };

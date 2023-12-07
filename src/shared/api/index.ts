@@ -1,6 +1,6 @@
 import axios, { AxiosResponse } from 'axios';
-import { ClothesStyle, Weather } from './types';
-import { API_KEY, WEATHER_PERIOD } from './constants';
+import { Clothes, ClothesStyle, Weather } from './types';
+import { API_KEY, GENDER } from './constants';
 
 // настройки приложения
 const instanceSettingApp = axios.create({
@@ -19,10 +19,14 @@ const interceptorsResponse = (response: AxiosResponse) => response.data;
 instanceSettingApp.interceptors.response.use(interceptorsResponse);
 instanceWeather.interceptors.response.use(interceptorsResponse);
 
-export const fetchClosesStyle = () => {
+export const fetchClothesStyle = () => {
   return instanceSettingApp.get<undefined, ClothesStyle>('clothesStyle');
 };
 
-export const fetchWeather = (city: string, weatherPeriod: WEATHER_PERIOD) => {
-  return instanceWeather.get<undefined, Weather>(`?q=${city}&exclude=${weatherPeriod}&appid=${API_KEY}`);
+export const fetchClothes = (gender: GENDER) => {
+  return instanceSettingApp.get<undefined, Clothes[]>(`clothes?gender=${gender}`);
+};
+
+export const fetchWeather = (city: string) => {
+  return instanceWeather.get<undefined, Weather>(`?q=${city}&exclude=current&appid=${API_KEY}`);
 };
