@@ -10,8 +10,8 @@ import { FormQueryWeather } from 'widgets/FormQueryWeather';
 
 import { parseKelvinToCelsius } from 'shared/libs';
 import { GENDER, PART_BODY } from 'shared/api/constants';
-import style from './style.module.less';
 import { CardClothes } from './CardClothes';
+import style from './style.module.less';
 import { useGetWeather } from '../hooks/useGetWeather';
 import { useGetClothes } from '../hooks/useGetClothes';
 
@@ -70,7 +70,9 @@ export const MainPage = () => {
   return (
     <Layout className={style.layout}>
       <Header style={{ ...headerStyle, background: colorPrimary }}>
-        <Typography.Title level={3}>Подбор одежды по погоде</Typography.Title>
+        <Typography.Title level={1} style={{ fontSize: 20 }}>
+          Подбор одежды по погоде
+        </Typography.Title>
       </Header>
       <Content className={style.content}>
         <Flex vertical align="center" style={{ padding: 24 }} gap={20}>
@@ -91,7 +93,11 @@ export const MainPage = () => {
               </Card>
             )}
             {Object.entries(data).length > 0 && (
-              <Card title={'Одежда:'} headStyle={{ backgroundColor: colorPrimary }}>
+              <Card
+                title={'Одежда:'}
+                headStyle={{ backgroundColor: colorPrimary }}
+                bodyStyle={{ maxHeight: 500, overflow: 'auto' }}
+              >
                 <CardClothes data={data[PART_BODY.HEAD]} title={'Голова:'} loading={loading} />
                 <CardClothes data={data[PART_BODY.BODY]} title={'Тело:'} loading={loading} />
                 <CardClothes data={data[PART_BODY.HEAD]} title={'Ноги:'} loading={loading} />
