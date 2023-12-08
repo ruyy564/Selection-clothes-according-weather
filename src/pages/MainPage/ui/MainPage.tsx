@@ -34,6 +34,7 @@ export const MainPage = () => {
 
   const [form] = Form.useForm<FormType>();
   const [activeKey, setActiveKey] = useState(['1']);
+  const [excludedClothes, setExcludedClothes] = useState<PART_BODY[]>([]);
 
   const { mutation: weatherMutation, loading: loadingWeather } = useGetWeather();
   const { mutation: clothesMutation, loading: loadingClothes, data } = useGetClothes(form, weatherMutation.data);
@@ -100,8 +101,10 @@ export const MainPage = () => {
               >
                 <CardClothes data={data[PART_BODY.HEAD]} title={'Голова:'} loading={loading} />
                 <CardClothes data={data[PART_BODY.BODY]} title={'Тело:'} loading={loading} />
-                <CardClothes data={data[PART_BODY.HEAD]} title={'Ноги:'} loading={loading} />
-                <CardClothes data={data[PART_BODY.HEAD]} title={'Обувь:'} loading={loading} />
+                {!excludedClothes.includes(PART_BODY.LEGS) && (
+                  <CardClothes data={data[PART_BODY.LEGS]} title={'Ноги:'} loading={loading} />
+                )}
+                <CardClothes data={data[PART_BODY.FOOT]} title={'Обувь:'} loading={loading} />
               </Card>
             )}
           </Flex>

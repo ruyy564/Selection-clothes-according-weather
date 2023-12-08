@@ -41,7 +41,7 @@ export const useGetClothes = (form: FormInstance<FormType>, weather?: Weather) =
       for (const key in data) {
         const dec = decart(data[key as PART_BODY]);
         const sumDec = calcSum(dec);
-        const filteredClothes = filterByCoef(sumDec, tempCoef);
+        const filteredClothes = filterByCoef(sumDec, tempCoef, key as PART_BODY);
 
         filteredClothes.length > 0 && (newData[key as PART_BODY] = filteredClothes);
       }

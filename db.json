@@ -1,150 +1,622 @@
 {
-    "clothesStyle":[
-        {
-            "id":"1",
-            "name":"Повседневный"
-        },
-        {
-            "id":"2",
-            "name":"Деловой"
-        }
-    ],
-    "clothes":[
-        {
-            "style":["Повседневный","Деловой"],
-            "age":[15,45],
-            "type":"high",
-            "gender":"male",
-            "partOfBody":["head"],
-            "coefficient":30,
-            "name":"шапка1",
-            "img":"https://a.lmcdn.ru/img600x866/M/P/MP002XU0CWJ8_21088099_1_v1.jpg"
-        },
-        {
-            "style":["Повседневный"],
-            "age":[15,45],
-            "type":"high",
-            "gender":"male",
-            "partOfBody":["foot"],
-            "coefficient":10,
-            "name":"кроссовки1",
-            "img":"https://lapotoknn.ru/upload/iblock/a81/a81fa1c5e68d6f34e80cce4f64850d9a.jpg"
-        },
-        {
-            "style":["Повседневный"],
-            "age":[15,45],
-            "type":"high",
-            "gender":"male",
-            "partOfBody":["foot"],
-            "coefficient":30,
-            "name":"кроссовки2",
-            "img":"https://cdn.lagarderob.ru/images/312x400x0x0x0x0_trim_bg_rgb:ffffff/2/57e16bfa131109d3f05c6b34d56b2ce6.jpg"
-        },
-        {
-            "style":["Повседневный"],
-            "age":[15,45],
-            "type":"high",
-            "gender":"male",
-            "partOfBody":["legs"],
-            "coefficient":17,
-            "name":"штаны1",
-            "img":"https://ateks-group.ru/wp-content/uploads/2020/10/bb551ae3714a2be08189b3783872cce2.jpg"
-        },
-        {
-            "style":["Повседневный"],
-            "age":[15,45],
-            "type":"high",
-            "gender":"male",
-            "partOfBody":["legs"],
-            "coefficient":7,
-            "name":"шорты1",
-            "img":"https://img.fix-price.com/800x800/images/origin/origin/c5765a9e1a4e918d36db2bb2e1fb56b8.jpg"
-        },
-        {
-            "style":["Повседневный"],
-            "age":[15,45],
-            "type":"low",
-            "gender":"male",
-            "partOfBody":["body"],
-            "coefficient":10,
-            "name":"футболка1",
-            "img":"https://files.gifts.ru/reviewer/tb/13/6140.60_73_500.jpg"
-        },
-        {
-            "style":["Повседневный"],
-            "age":[15,45],
-            "type":"low",
-            "gender":"male",
-            "partOfBody":["body"],
-            "coefficient":12,
-            "name":"футболка2",
-            "img":"https://static.insales-cdn.com/images/products/1/7435/532454667/DSCF9149.JPG"
-        },
-        {
-            "style":["Повседневный"],
-            "age":[15,45],
-            "type":"low",
-            "gender":"male",
-            "partOfBody":["body"],
-            "coefficient":13,
-            "name":"футболка3",
-            "img":"https://thetaste.ru/image/cache/catalog/foto_product/0000_Brands/TASTE/3165/31651-1500x1500.jpg"
-        },
-        {
-            "style":["Повседневный"],
-            "age":[15,45],
-            "type":"middle",
-            "gender":"male",
-            "partOfBody":["body"],
-            "coefficient":34,
-            "name":"кофта1",
-            "img":"https://static.reserved.com/media/catalog/product/cache/1200/a4e40ebdc3e371adff845072e1c73f37/X/K/XK530-90M-001.jpg"
-        },
-        {
-            "style":["Повседневный"],
-            "age":[15,45],
-            "type":"middle",
-            "gender":"male",
-            "partOfBody":["body"],
-            "coefficient":27,
-            "name":"кофта2",
-            "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkhBt4GD2jV8KR083kjtOzbMc2DEoOkMCUrQ&usqp=CAU"
-        },
-        {
-            "style":["Повседневный"],
-            "age":[15,45],
-            "type":"middle",
-            "gender":"male",
-            "partOfBody":["body"],
-            "coefficient":23,
-            "name":"кофта3",
-            "img":"https://tecel.ru/upload/iblock/47c/47c9e23dfb5133478e8eff43e71e0bda.jpg"
-        },
-        {
-            "style":["Повседневный"],
-            "age":[15,45],
-            "type":"high",
-            "gender":"male",
-            "partOfBody":["body"],
-            "coefficient":37,
-            "name":"куртка1",
-            "img":"https://files.gifts.ru/reviewer/tb/14/02898312_2_500.jpg"
-        },
-        {
-            "style":["Повседневный"],
-            "age":[15,45],
-            "type":"high",
-            "gender":"male",
-            "partOfBody":["body"],
-            "coefficient":49,
-            "name":"куртка2",
-            "img":"https://st2.tsum.com/sig/de37564f1216f0e362afcc0c432012e2/width/1526/i/bd/35/3d/d0/bd353dd0-3338-3395-8065-f704e45cda4b.jpg"
-        }
-    ],
-    "additionalClothes":[
-        {
-            "name":"очки",
-            "weatherStyle":"солнце"
-        }
-    ]
+  "clothesStyle": [
+    {
+      "id": "1",
+      "name": "Повседневный"
+    },
+    {
+      "id": "2",
+      "name": "Деловой"
+    }
+  ],
+  "clothes": [
+    {
+      "style": ["Повседневный", "Деловой"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "male",
+      "partOfBody": ["head"],
+      "coefficient": 50,
+      "name": "шапка1",
+      "img": "https://a.lmcdn.ru/img600x866/M/P/MP002XU0CWJ8_21088099_1_v1.jpg"
+    },
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "male",
+      "partOfBody": ["foot"],
+      "coefficient": 10,
+      "name": "кроссовки1",
+      "img": "https://lapotoknn.ru/upload/iblock/a81/a81fa1c5e68d6f34e80cce4f64850d9a.jpg"
+    },
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "male",
+      "partOfBody": ["foot"],
+      "coefficient": 30,
+      "name": "кроссовки2",
+      "img": "https://cdn.lagarderob.ru/images/312x400x0x0x0x0_trim_bg_rgb:ffffff/2/57e16bfa131109d3f05c6b34d56b2ce6.jpg"
+    },
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "male",
+      "partOfBody": ["legs"],
+      "coefficient": 17,
+      "name": "штаны1",
+      "img": "https://ateks-group.ru/wp-content/uploads/2020/10/bb551ae3714a2be08189b3783872cce2.jpg"
+    },
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "male",
+      "partOfBody": ["legs"],
+      "coefficient": 7,
+      "name": "шорты1",
+      "img": "https://img.fix-price.com/800x800/images/origin/origin/c5765a9e1a4e918d36db2bb2e1fb56b8.jpg"
+    },
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "low",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 10,
+      "name": "футболка1",
+      "img": "https://files.gifts.ru/reviewer/tb/13/6140.60_73_500.jpg"
+    },
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "low",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 12,
+      "name": "футболка2",
+      "img": "https://static.insales-cdn.com/images/products/1/7435/532454667/DSCF9149.JPG"
+    },
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "low",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 13,
+      "name": "футболка3",
+      "img": "https://thetaste.ru/image/cache/catalog/foto_product/0000_Brands/TASTE/3165/31651-1500x1500.jpg"
+    },
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "middle",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 34,
+      "name": "кофта1",
+      "img": "https://static.reserved.com/media/catalog/product/cache/1200/a4e40ebdc3e371adff845072e1c73f37/X/K/XK530-90M-001.jpg"
+    },
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "middle",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 27,
+      "name": "кофта2",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkhBt4GD2jV8KR083kjtOzbMc2DEoOkMCUrQ&usqp=CAU"
+    },
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "middle",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 23,
+      "name": "кофта3",
+      "img": "https://tecel.ru/upload/iblock/47c/47c9e23dfb5133478e8eff43e71e0bda.jpg"
+    },
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 37,
+      "name": "куртка1",
+      "img": "https://files.gifts.ru/reviewer/tb/14/02898312_2_500.jpg"
+    },
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 49,
+      "name": "куртка2",
+      "img": "https://st2.tsum.com/sig/de37564f1216f0e362afcc0c432012e2/width/1526/i/bd/35/3d/d0/bd353dd0-3338-3395-8065-f704e45cda4b.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "male",
+      "partOfBody": ["head"],
+      "coefficient": 50,
+      "name": "шапка1",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPAEyWBJYqW75KijCv5SJfVVj8SLAa9RkbeQ&usqp=CAU"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "male",
+      "partOfBody": ["foot"],
+      "coefficient": 30,
+      "name": "туфли1",
+      "img": "https://lapotoknn.ru/upload/iblock/ed2/ed2aa3f371a5b17e068227c9e4aed8d4.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "male",
+      "partOfBody": ["foot"],
+      "coefficient": 25,
+      "name": "туфли2",
+      "img": "https://moda.max-partner.ru/upload/iblock/74c/74c2590ec8b9d7f550198a7e48efb10e.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "male",
+      "partOfBody": ["legs"],
+      "coefficient": 27,
+      "name": "брюки1",
+      "img": "https://cdn.finnflare.com/upload/resize_cache/full_size/FAC/200/800_1200_2/FAC21010R_200_100.jpg?cdn=1666016181"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "low",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 12,
+      "name": "рубашка1",
+      "img": "https://printing-t-shirts.podaru.ru/assets/products/52102/6561.10_1_tif_1000x1000.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "low",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 15,
+      "name": "рубашка2",
+      "img": "https://files.gifts.ru/reviewer/tb/33/2506.60_10_500.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "low",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 13,
+      "name": "рубашка3",
+      "img": "https://files.gifts.ru/reviewer/thumbnails/www/2508.14_1_psd_1000x1000.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "middle",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 22,
+      "name": "пиджак1",
+      "img": "https://okrug.ru/image/cache/data/kostyumy/2101_2102/2101__black__00-750x1163.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "middle",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 27,
+      "name": "пиджак2",
+      "img": "https://www.qboutique.ru/imgproxy/soRwWp4e3Ks8vERrtGt9Jo7ei4mKfqeFDoy8Re3U_Fs/w:900/h:1350/bG9jYWw6Ly8vdXBsb2FkL2libG9jay82ODkvdWRkOG9oN2dpZzVzbzJ5dHBxZGsyNzBiczZ1aTA0dHcvZWRkNjg1MDktY2Y0OC0xMWViLWEwMTItMjQ0YmZlOTM5ZmFkXzlkMTdiYjEwLWUzMDgtMTFlYi1hMDEyLTI0NGJmZTkzOWZhZC5qcGVn.jpeg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "middle",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 30,
+      "name": "пиджак3",
+      "img": "https://yepman.ru/wp-content/uploads/2013/02/tumblr_mhuw6tAikS1qeuobqo1_1280.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 37,
+      "name": "пальто1",
+      "img": "https://miltex.su/wa-data/public/shop/products/62/06/662/images/1607/1607.750@2x.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 49,
+      "name": "пальто2",
+      "img": "https://themensclub.ru/components/com_virtuemart/shop_image/product/_________________5a448708d6c55.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "male",
+      "partOfBody": ["head"],
+      "coefficient": 50,
+      "name": "шапка1",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPAEyWBJYqW75KijCv5SJfVVj8SLAa9RkbeQ&usqp=CAU"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "male",
+      "partOfBody": ["foot"],
+      "coefficient": 30,
+      "name": "туфли1",
+      "img": "https://lapotoknn.ru/upload/iblock/ed2/ed2aa3f371a5b17e068227c9e4aed8d4.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "male",
+      "partOfBody": ["foot"],
+      "coefficient": 25,
+      "name": "туфли2",
+      "img": "https://moda.max-partner.ru/upload/iblock/74c/74c2590ec8b9d7f550198a7e48efb10e.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "male",
+      "partOfBody": ["legs"],
+      "coefficient": 27,
+      "name": "брюки1",
+      "img": "https://cdn.finnflare.com/upload/resize_cache/full_size/FAC/200/800_1200_2/FAC21010R_200_100.jpg?cdn=1666016181"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "low",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 12,
+      "name": "рубашка1",
+      "img": "https://printing-t-shirts.podaru.ru/assets/products/52102/6561.10_1_tif_1000x1000.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "low",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 15,
+      "name": "рубашка2",
+      "img": "https://files.gifts.ru/reviewer/tb/33/2506.60_10_500.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "low",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 13,
+      "name": "рубашка3",
+      "img": "https://files.gifts.ru/reviewer/thumbnails/www/2508.14_1_psd_1000x1000.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "middle",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 22,
+      "name": "пиджак1",
+      "img": "https://okrug.ru/image/cache/data/kostyumy/2101_2102/2101__black__00-750x1163.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "middle",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 27,
+      "name": "пиджак2",
+      "img": "https://www.qboutique.ru/imgproxy/soRwWp4e3Ks8vERrtGt9Jo7ei4mKfqeFDoy8Re3U_Fs/w:900/h:1350/bG9jYWw6Ly8vdXBsb2FkL2libG9jay82ODkvdWRkOG9oN2dpZzVzbzJ5dHBxZGsyNzBiczZ1aTA0dHcvZWRkNjg1MDktY2Y0OC0xMWViLWEwMTItMjQ0YmZlOTM5ZmFkXzlkMTdiYjEwLWUzMDgtMTFlYi1hMDEyLTI0NGJmZTkzOWZhZC5qcGVn.jpeg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "middle",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 30,
+      "name": "пиджак3",
+      "img": "https://yepman.ru/wp-content/uploads/2013/02/tumblr_mhuw6tAikS1qeuobqo1_1280.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 37,
+      "name": "пальто1",
+      "img": "https://miltex.su/wa-data/public/shop/products/62/06/662/images/1607/1607.750@2x.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "male",
+      "partOfBody": ["body"],
+      "coefficient": 49,
+      "name": "пальто2",
+      "img": "https://themensclub.ru/components/com_virtuemart/shop_image/product/_________________5a448708d6c55.jpg"
+    },
+
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "female",
+      "partOfBody": ["foot"],
+      "coefficient": 30,
+      "name": "кроссовки1",
+      "img": "https://stockmann.ru/istk/db58TqMgkHx6cgjxpF3tXJNS-d3CKeaxBIaTQK78xxk/rs:fill-down:344:516:0/g:no/bG9jYWw6Ly8vdXBsb2FkL2libG9jay80YWYvNTI4NjYwOF8xLmpwZw.jpg"
+    },
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "female",
+      "partOfBody": ["foot"],
+      "coefficient": 25,
+      "name": "кроссовки2",
+      "img": "https://cdn.demix.ru/upload/mdm/media_content/resize/59a/1000_1000_6880/75086100299.jpg"
+    },
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "female",
+      "partOfBody": ["legs"],
+      "coefficient": 27,
+      "name": "штаны1",
+      "img": "https://imgcdn.loverepublic.ru/upload/images/31532/thumb/600_9999/3153222741_62_4.jpg"
+    },
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "female",
+      "partOfBody": ["legs"],
+      "coefficient": 22,
+      "name": "шорты1",
+      "img": "https://imgcdn.loverepublic.ru/upload/images/23592/thumb/600_9999/2359205737_165_5.jpg"
+    },
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "low",
+      "gender": "female",
+      "partOfBody": ["body"],
+      "coefficient": 12,
+      "name": "футболка1",
+      "img": "https://giftprime.ru/wp-content/uploads/2021/02/03581309_2_1000x1000.jpg"
+    },
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "low",
+      "gender": "female",
+      "partOfBody": ["body"],
+      "coefficient": 15,
+      "name": "футболка2",
+      "img": "https://files.gifts.ru/reviewer/tb/10/03807102_3_500.jpg"
+    },
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "low",
+      "gender": "female",
+      "partOfBody": ["body"],
+      "coefficient": 13,
+      "name": "футболка3",
+      "img": "https://4kraski.ru/assets/images/products/20322/tw04t450-1-tif-1000x1000.jpg"
+    },
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "middle",
+      "gender": "female",
+      "partOfBody": ["body"],
+      "coefficient": 22,
+      "name": "кофта1",
+      "img": "https://nasocks.ru/wp-content/fm_files/15742585911.jpg"
+    },
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "middle",
+      "gender": "female",
+      "partOfBody": ["body"],
+      "coefficient": 27,
+      "name": "кофта2",
+      "img": "https://img.fix-price.com/800x800/images/origin/origin/209b61f5786ddffcdd1e4bc978de629c.png"
+    },
+
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "female",
+      "partOfBody": ["body"],
+      "coefficient": 37,
+      "name": "куртка1",
+      "img": "https://fridaywear.ru/upload/resize_cache/webp/iblock/1f1/1f1b9b305a57f4dbc795373f4009ab7a.webp"
+    },
+    {
+      "style": ["Повседневный"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "female",
+      "partOfBody": ["body"],
+      "coefficient": 49,
+      "name": "куртка2",
+      "img": "https://oldos-shop.ru/upload/resize_cache/iblock/6d6/572_858_1/5k6wxsptlyt8cj5b20cdo4gw1oxq2yd6.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "female",
+      "partOfBody": ["head"],
+      "coefficient": 50,
+      "name": "шапка1",
+      "img": "https://stockmann.ru/istk/dO3dCQczjEjLXl075y-NYnY7opZSvwAScGb_ErnAMOA/rs:fill-down:344:516:0/g:no/bG9jYWw6Ly8vdXBsb2FkL2libG9jay9kNjcvNTMwOTIwMF8xLmpwZw.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "female",
+      "partOfBody": ["foot"],
+      "coefficient": 30,
+      "name": "туфли1",
+      "img": "https://foto.modabook.net/2015/04/Vidy-delovoi-obuvi-01.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "female",
+      "partOfBody": ["foot"],
+      "coefficient": 25,
+      "name": "туфли2",
+      "img": "https://stockmann.ru/istk/uT3Roee6AVtfoWAVEKNp1OVZJorIWitSoseRIcEqV4c/rs:fill-down:344:516:0/g:no/bG9jYWw6Ly8vdXBsb2FkL2libG9jay84NzgvNTA4MjgzNV8xLmpwZw.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "female",
+      "partOfBody": ["legs"],
+      "coefficient": 27,
+      "name": "брюки1",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2OFY-iqeP_NBqudV2Gr4DwhPChBuj_Kvx9w&usqp=CAU"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "low",
+      "gender": "female",
+      "partOfBody": ["body"],
+      "coefficient": 12,
+      "name": "рубашка1",
+      "img": "https://img.cachan.ru/images/312x400x0x0x0x0_trim_bg_rgb:ffffff/2/5c43bfbb1eb16ecc0860dc8b2b5af3e2.jpg?s=225"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "low",
+      "gender": "female",
+      "partOfBody": ["body"],
+      "coefficient": 15,
+      "name": "рубашка2",
+      "img": "https://static.insales-cdn.com/images/products/1/5516/470250892/DSC02523.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "low",
+      "gender": "female",
+      "partOfBody": ["body"],
+      "coefficient": 13,
+      "name": "рубашка3",
+      "img": "https://www.foroffice.ru/upload/iblock/798/02764111_2_tif_1000x1000.jpg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "middle",
+      "gender": "female",
+      "partOfBody": ["body"],
+      "coefficient": 22,
+      "name": "пиджак1",
+      "img": "https://pizhon.by/assets/cache_image/products/7763/2d28b1a8b4358852006ba9e5409e7395_1066x1500_71c.jpeg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "middle",
+      "gender": "female",
+      "partOfBody": ["body"],
+      "coefficient": 27,
+      "name": "пиджак2",
+      "img": "https://pizhon.by/assets/cache_image/products/7764/2de02eb6c1d3b3e334131463cb32be98_1066x1500_71c.jpeg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "middle",
+      "gender": "female",
+      "partOfBody": ["body"],
+      "coefficient": 30,
+      "name": "пиджак3",
+      "img": "https://pizhon.by/assets/cache_image/products/7765/7093552a3df411452cb293fcfc7fe0bf_1066x1500_71c.jpeg"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "female",
+      "partOfBody": ["body"],
+      "coefficient": 37,
+      "name": "пальто1",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqz6lj25EEP6f5iueYTRlgVPsJ2qK0hKUeCLiQFUeDSKXhfd5zw_ZkvdE3JlpMNS3DYfI&usqp=CAU"
+    },
+    {
+      "style": ["Деловой"],
+      "age": [15, 45],
+      "type": "high",
+      "gender": "female",
+      "partOfBody": ["body"],
+      "coefficient": 49,
+      "name": "пальто2",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJOtnKNpfzmBtA78JQnViInH44lfzcIJoR1xBm7LrZRI5Jebv83Tiwsc-7tBzWOiU3sKY&usqp=CAU"
+    }
+  ],
+  "additionalClothes": [
+    {
+      "name": "очки",
+      "weatherStyle": "солнце"
+    }
+  ]
 }
