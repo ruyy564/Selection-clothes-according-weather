@@ -17,9 +17,9 @@ export const CardClothes: FC<Props> = (props) => {
   const [random, setRandom] = useState(0);
 
   const reloadClothes = () => {
-    setRandom(getRandomNumber(0, data.length - 1));
+    setRandom(getRandomNumber(0, data.length));
   };
-
+  // console.log(title, data, random);
   return (
     data?.[random] && (
       <Card
@@ -30,9 +30,11 @@ export const CardClothes: FC<Props> = (props) => {
         bodyStyle={{ display: 'flex', gap: 10 }}
       >
         <Flex vertical gap={30}>
-          <Button onClick={reloadClothes} style={{ width: 100 }}>
-            Обновить
-          </Button>
+          {data?.length > 1 && (
+            <Button onClick={reloadClothes} style={{ width: 100 }}>
+              Обновить
+            </Button>
+          )}
           <Flex gap={30}>
             {data[random].clothes.map((item, index) => {
               if (item.type === 'empty') {

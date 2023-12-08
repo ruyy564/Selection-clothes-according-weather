@@ -387,7 +387,7 @@
       "type": "high",
       "gender": "female",
       "partOfBody": ["foot"],
-      "coefficient": 30,
+      "coefficient": 10,
       "name": "кроссовки1",
       "img": "https://stockmann.ru/istk/db58TqMgkHx6cgjxpF3tXJNS-d3CKeaxBIaTQK78xxk/rs:fill-down:344:516:0/g:no/bG9jYWw6Ly8vdXBsb2FkL2libG9jay80YWYvNTI4NjYwOF8xLmpwZw.jpg"
     },
@@ -397,7 +397,7 @@
       "type": "high",
       "gender": "female",
       "partOfBody": ["foot"],
-      "coefficient": 25,
+      "coefficient": 15,
       "name": "кроссовки2",
       "img": "https://cdn.demix.ru/upload/mdm/media_content/resize/59a/1000_1000_6880/75086100299.jpg"
     },
@@ -407,7 +407,7 @@
       "type": "high",
       "gender": "female",
       "partOfBody": ["legs"],
-      "coefficient": 27,
+      "coefficient": 7,
       "name": "штаны1",
       "img": "https://imgcdn.loverepublic.ru/upload/images/31532/thumb/600_9999/3153222741_62_4.jpg"
     },
@@ -508,7 +508,7 @@
       "type": "high",
       "gender": "female",
       "partOfBody": ["foot"],
-      "coefficient": 30,
+      "coefficient": 10,
       "name": "туфли1",
       "img": "https://foto.modabook.net/2015/04/Vidy-delovoi-obuvi-01.jpg"
     },
@@ -518,7 +518,7 @@
       "type": "high",
       "gender": "female",
       "partOfBody": ["foot"],
-      "coefficient": 25,
+      "coefficient": 35,
       "name": "туфли2",
       "img": "https://stockmann.ru/istk/uT3Roee6AVtfoWAVEKNp1OVZJorIWitSoseRIcEqV4c/rs:fill-down:344:516:0/g:no/bG9jYWw6Ly8vdXBsb2FkL2libG9jay84NzgvNTA4MjgzNV8xLmpwZw.jpg"
     },
@@ -528,10 +528,20 @@
       "type": "high",
       "gender": "female",
       "partOfBody": ["legs"],
-      "coefficient": 27,
+      "coefficient": 7,
       "name": "брюки1",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2OFY-iqeP_NBqudV2Gr4DwhPChBuj_Kvx9w&usqp=CAU"
     },
+    {
+        "style": ["Деловой"],
+        "age": [15, 45],
+        "type": "high",
+        "gender": "female",
+        "partOfBody": ["legs"],
+        "coefficient": 27,
+        "name": "брюки1",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2OFY-iqeP_NBqudV2Gr4DwhPChBuj_Kvx9w&usqp=CAU"
+      },
     {
       "style": ["Деловой"],
       "age": [15, 45],
